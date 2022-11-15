@@ -52,3 +52,11 @@ collections:
           - { label: Language, name: language, widget: string }
           - { label: Post back home text, name: back_home_text, widget: string }
           - { label: URL, name: url, widget: string, required: false }
+      - label: Dish
+        name: dish
+        file: _data/dish.json
+        fields:
+          - { label: Title, name: title, widget: string }
+          - { label: Description, name: description, widget: string, required: false }
+          - { label: "Featured Image", name: "thumbnail", widget: "image"}
+          - { label: "Price", name: "price", widget: "number", value_type: "int"}
